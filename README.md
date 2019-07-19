@@ -18,7 +18,5 @@ You can run ```python3 data/make_pairs.py test 1500 1500``` to randomly build th
 We provide two training methods. One is based on "Generalized End-to-End Loss for Speaker Verfication"[GE2E](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8462665). 
 Anonther is x-vector(classification loss). The model is LSTM or CNN. We also provide different attention strategies and different margin strategies. 
 ```
-
 sh run.sh --loss_type class_softmax | ge2e_softmax --model_type lstm | cnn --att_type  base_attention | last_state | multi_attention --margin_type Softmax ```   
-
 ```
